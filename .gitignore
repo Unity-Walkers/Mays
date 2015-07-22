@@ -1,2 +1,19 @@
-#Mays/Library/ ディレクトリ内のファイルを無視する
-Mays/Library/
+#指定したファイル(ディレクトリ)を無視する
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+
+#指定した拡張子のファイルを無視する(効いてない？)
+*.csproj
+*.unityproj
+*.sln
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+
+*.pidb.meta
+
+sysinfo.txt
+
