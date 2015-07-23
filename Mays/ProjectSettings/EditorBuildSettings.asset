@@ -7,3 +7,19 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Resources/GameClear/GameResult.unity
+  - enabled: 1
+    path: Assets/Resources/GameMain/GameMain.unity
+  - enabled: 1
+    path: Assets/Resources/GameMain/test.unity
+  - enabled: 1
+    path: Assets/Resources/Title/GameTitle/select1.unity
+  - enabled: 1
+    path: Assets/Resources/Title/GameTitle/select2.unity
+  - enabled: 1
+    path: Assets/Resources/Title/GameTitle/test1.unity
+  - enabled: 1
+    path: Assets/Resources/Title/GameTitle/test2.unity
+  - enabled: 1
+    path: Assets/Resources/Title/GameTitle/title.unity
+  - enabled: 1
+    path: Assets/Resources/Title/GameTitle/title2.unity

@@ -3,10 +3,11 @@
 [Tt]emp/
 [Oo]bj/
 
-#指定した拡張子のファイルを無視する(効いてない？)
+#指定した拡張子のファイルを無視する
 *.csproj
 *.unityproj
 *.sln
+*.suo
 *.tmp
 *.user
 *.userprefs
