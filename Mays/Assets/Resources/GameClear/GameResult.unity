@@ -190,7 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 832d3087841c4e644be8a8d52ff0d241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: title
+  SceneName: GameMain
   Interval: 1
   Color: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1 &100891120
@@ -356,7 +356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 832d3087841c4e644be8a8d52ff0d241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: GameMain
+  SceneName: title
   Interval: 1
   Color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &442016431
