@@ -9,6 +9,10 @@ public class main : MonoBehaviour {
     [SerializeField]
     GameObject goal;            // ゴールのオブジェクト
 
+
+    
+
+    
 	// Use this for initialization
 	void Start () {
 	
@@ -24,9 +28,10 @@ public class main : MonoBehaviour {
         float dis = Vector3.Distance(spherePos, goalPos);
        // Debug.Log("Distance : " + dis);
         Debug.Log(spherePos);
-        if (dis<=1)
+        if (dis<=2)
          {
-             Application.LoadLevel("test");
+             CameraFade.StartAlphaFade(Color.white, false, 1f, 0f, () => { Application.LoadLevel("test"); });
+           //  Application.LoadLevel("test");
          }
     }
 }
