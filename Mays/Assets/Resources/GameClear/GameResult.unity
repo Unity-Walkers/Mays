@@ -190,7 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 832d3087841c4e644be8a8d52ff0d241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: GameImage
+  SceneName: GameMain
   Interval: 1
   Color: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1 &100891120
@@ -218,7 +218,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 6
   m_Type: 1
-  m_Color: {r: 1, g: .956862748, b: .839215696, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -248,7 +248,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 100891120}
   m_LocalRotation: {x: .408217937, y: -.234569728, z: .109381676, w: .875426054}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -356,7 +356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 832d3087841c4e644be8a8d52ff0d241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: StartImage
+  SceneName: title
   Interval: 1
   Color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &442016431
@@ -481,8 +481,8 @@ Camera:
   m_GameObject: {fileID: 462212953}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -672,6 +672,10 @@ Prefab:
     - target: {fileID: 22470434, guid: 2dfdeb79a72d5ca48bc6146f28a9cf12, type: 2}
       propertyPath: m_AnchorMax.y
       value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22399306, guid: 2dfdeb79a72d5ca48bc6146f28a9cf12, type: 2}
+      propertyPath: m_RenderMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2dfdeb79a72d5ca48bc6146f28a9cf12, type: 2}
