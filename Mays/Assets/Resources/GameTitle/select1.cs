@@ -3,20 +3,32 @@ using System.Collections;
 
 public class select1 : MonoBehaviour {
 
+    public float red = 1.0f;
+    public float green = 1.0f;
+    public float blue = 1.0f;
+    public float alpha = 0.0f;
+
     public int time;
     public int select;
     public bool flag;
-	void Start () {
+    GameObject kabe;
+    void Start()
+    {
         time = 0;
         select = 0;
         flag = false;
-	}
+        
+        kabe = GameObject.FindWithTag("TagEnemy");
+        kabe.GetComponent<SpriteRenderer>().color = new Color(red, green, blue, alpha);
+    }
 	
 	// Update is called once per frame
 	void Update () {
         if(flag)
         {
             time = time + 1;
+            alpha = alpha + 0.03f;
+            kabe.GetComponent<SpriteRenderer>().color = new Color(red, green, blue, alpha);
         }
 
         if (time == 40)
