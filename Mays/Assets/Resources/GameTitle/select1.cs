@@ -8,7 +8,8 @@ public class select1 : MonoBehaviour {
     public float blue = 1.0f;
     public float alpha = 0.0f;
 
-    public int time;
+    public float timer = 0; 
+    public float time;
     public int select;
     public bool flag;
     GameObject kabe;
@@ -26,20 +27,21 @@ public class select1 : MonoBehaviour {
 	void Update () {
         if(flag)
         {
+            timer += Time.deltaTime;
             time = time + 1;
             alpha = alpha + 0.03f;
             kabe.GetComponent<SpriteRenderer>().color = new Color(red, green, blue, alpha);
         }
 
-        if (time == 40)
+        if (timer > 2)
         {
             if(select ==1)
             {
-                Application.LoadLevel("test1");
+                Application.LoadLevel("GameMain");
             }
             if (select == 2)
             {
-                Application.LoadLevel("test2");
+                Application.LoadLevel("test1");
             }
         }
         //マウスクリック
