@@ -166,7 +166,6 @@ public class CameraFade : MonoBehaviour
         // 1秒後に1秒かけて白色でフェードイン
         CameraFade.StartAlphaFade(Color.white, true, 1f, 1f);
         // 1秒かけてフェードアウト, 終わったら LoadLevel
-      //  
     }
 
 
