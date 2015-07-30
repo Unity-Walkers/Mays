@@ -34,9 +34,9 @@ public class ballRun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        xac = 1.0f * xac + 1.0f * Input.acceleration.x;
-        yac = 1.0f * yac + 1.0f * Input.acceleration.y;
-        zac = 1.0f * zac + 1.0f * Input.acceleration.z;
+        xac = 0.1f * xac + 0.1f * Input.acceleration.x;
+        yac = 0.1f * yac + 0.1f * Input.acceleration.y;
+        zac = 0.1f * zac + 0.1f * Input.acceleration.z;
         transform.position += new Vector3(xac, zac, yac);
     }
 
