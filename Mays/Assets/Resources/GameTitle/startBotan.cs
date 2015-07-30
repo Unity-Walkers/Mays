@@ -4,38 +4,56 @@ using System.Collections;
 public class startBotan : MonoBehaviour
 {
 
+    public float timer = 0;
     public int time = 0;
-    public float red = 1.0f;
-    public float green = 1.0f;
-    public float blue = 1.0f;
-    public float alpha = 0.0f;
-    public bool a;
+    public float alphaS = 0.0f;
+    public float alphaW = 0.0f;
+    public bool flag;
+
+    GameObject TitleW;
+    GameObject TitleS;
+    //Start_Button
 
     // Use this for initialization
     void Start()
     {
-        a = false;
+        flag = false;
+        TitleW = GameObject.FindWithTag("Title_White");
+        TitleW.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, alphaW);
+
+        TitleS = GameObject.FindWithTag("Start_Button");
+        TitleS.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, alphaS);
     }
 
     // Update is called once per frame
-    void Update() {
-        if(time == 0)
-        {
-            this.GetComponent<SpriteRenderer>().color = new Color(red, green, blue, alpha);
-        }
+    void Update()
+    {
         time = time + 1;
-        
-        if((time>40)&&(time <55))
+
+        if ((time > 40) && (time < 55))
         {
-            if(alpha<=1.0f)
+            if (alphaS <= 1.0f)
             {
-                alpha = alpha + 0.1f;
+                alphaS = alphaS + 0.1f;
                 // 元の画像の色のまま、半透明になって表示される。
-                this.GetComponent<SpriteRenderer>().color = new Color(red, green, blue, alpha);
+                TitleS.GetComponent<SpriteRenderer>().color = new Color(1,1,1, alphaS);
             }
 
         }
-        if(time>55)
+
+        if (flag)
+        {
+            timer += Time.deltaTime;
+            alphaW = alphaW + 0.03f;
+            TitleW.GetComponent<SpriteRenderer>().color = new Color(1,1,1, alphaW);
+        }
+
+        if (timer > 2)
+        {
+            Application.LoadLevel("select");
+        }
+
+        if (time > 55)
         {
             //マウスクリック
             if (this == Input.GetMouseButtonUp(0))
@@ -47,7 +65,7 @@ public class startBotan : MonoBehaviour
                 {
                     GameObject obj = aCollider2d.transform.gameObject;
                     Debug.Log(obj.name);
-                    Application.LoadLevel("title2");
+                    flag = true;
                 }
             }
             //タッチ操作
@@ -62,12 +80,10 @@ public class startBotan : MonoBehaviour
                     {
                         GameObject obj = aCollider2d.transform.gameObject;
                         Debug.Log(obj.name);
-                        Application.LoadLevel("title2");
+                        flag = true;
                     }
                 }
             }
         }
-
-	
-	}
+    }
 }

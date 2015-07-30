@@ -3,15 +3,12 @@ using System.Collections;
 
 public class fedoin : MonoBehaviour
 {
-    public float red = 1.0f;
-    public float green = 1.0f;
-    public float blue = 1.0f;
     public float alpha = 1.0f;
     public int time = 0;
     public bool a;
 	// Use this for initialization
 	void Start () {
-        this.GetComponent<SpriteRenderer>().color = new Color(red, green, blue, alpha);
+        this.GetComponent<SpriteRenderer>().color = new Color(1,1,1, alpha);
         a = true;
 	}
 	
@@ -28,7 +25,7 @@ public class fedoin : MonoBehaviour
             {
                 alpha = alpha - 0.02f;
                 // 元の画像の色のまま、半透明になって表示される。
-                this.GetComponent<SpriteRenderer>().color = new Color(red, green, blue, alpha);
+                this.GetComponent<SpriteRenderer>().color = new Color(1,1,1, alpha);
             }
             if (alpha <= 0.0f)
             {

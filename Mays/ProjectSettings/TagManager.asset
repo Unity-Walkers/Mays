@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - TagEnemy
+  - Tag 0
+  - Tag 1
+  - Title_White
+  - Start_Button
+  - Title_Title
   layers:
   - Default
   - TransparentFX
