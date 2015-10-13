@@ -6,9 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Resources/GameClear/GameResult.unity
+    path: Assets/Resources/GameTitle/title.unity
+  - enabled: 1
+    path: Assets/Resources/GameTitle/select.unity
   - enabled: 1
     path: Assets/Resources/GameMain/GameMain.unity
+  - enabled: 1
+    path: Assets/Resources/GameClear/GameResult.unity
   - enabled: 1
     path: Assets/Resources/GameMain/test.unity
   - enabled: 1
@@ -20,8 +24,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Resources/GameTitle/test2_test.unity
   - enabled: 1
-    path: Assets/Resources/GameTitle/title.unity
-  - enabled: 1
     path: Assets/Resources/GameTitle/title2_test.unity
-  - enabled: 1
-    path: Assets/Resources/GameTitle/select.unity

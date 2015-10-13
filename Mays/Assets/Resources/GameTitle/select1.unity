@@ -225,7 +225,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
-  m_StereoMirrorMode: 0
 --- !u!4 &429056177
 Transform:
   m_ObjectHideFlags: 0
@@ -388,9 +387,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fedd73d02992924fb7769d185e718cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  red: 1
-  green: 1
-  blue: 1
   alpha: 1
   time: 0
   a: 0

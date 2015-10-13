@@ -63,7 +63,7 @@ public class select1 : MonoBehaviour
             }
             if (select == 2)
             {
-                Application.LoadLevel("test1_test");
+                Application.LoadLevel("GameMain");
             }
         }
         if (FI_flag)

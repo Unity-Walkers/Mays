@@ -59,15 +59,15 @@ public class ballRun : MonoBehaviour
             switch (i)
             {
                 case 0://X
-                    xaccel = 0.9f * xaccel + 0.1f * Input.acceleration.x;
+                    xaccel = 1.5f * xaccel + 0.1f * Input.acceleration.x;
                  //   text = string.Format("X:{0}", System.Math.Round(xaccel, 2));
                     break;
                 case 1://Y
-                    yaccel = 0.9f * yaccel + 0.1f * Input.acceleration.y;
+                    yaccel = 1.5f * yaccel + 0.1f * Input.acceleration.y;
            //         text = string.Format("Y:{0}", System.Math.Round(yaccel, 2));
                     break;
                 case 2://Z
-                    zaccel = 0.9f * zaccel + 0.1f * Input.acceleration.z;
+                    zaccel = 1.5f * zaccel + 0.1f * Input.acceleration.z;
              //       text = string.Format("Z:{0}", System.Math.Round(zaccel, 2));
                     break;
                 default:

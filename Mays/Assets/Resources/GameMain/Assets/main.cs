@@ -30,7 +30,7 @@ public class main : MonoBehaviour {
         Debug.Log(spherePos);
         if (dis<=3)
          {
-             CameraFade.StartAlphaFade(Color.white, false, 1f, 0f, () => { Application.LoadLevel("test"); });
+             CameraFade.StartAlphaFade(Color.white, false, 1f, 0f, () => { Application.LoadLevel("GameResult"); });
            //  Application.LoadLevel("test");
          }
     }
